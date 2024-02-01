@@ -1,0 +1,27 @@
+
+#include <Arduino.h>
+
+int potentiometer_pin = A0;
+int pwm_pin1 = 3;  
+int pwm_pin2 = 4;  
+int voltagereference_pin = A1;  
+
+void setup() {
+  pinMode(voltagereference_pin, INPUT);
+  pinMode(pwm_pin1, OUTPUT);
+  pinMode(pwm_pin2, OUTPUT);
+
+  // Set the PWM frequency for pins 3 and 4
+  TCCR2B = TCCR2B & B11111000 | B00000011;
+}
+
+void loop() {
+  int duty_cycle = analogRead(potentiometer_pin);
+
+  // Map the duty cycle from the potentiometer to a range of 0-254 (8-bit PWM)
+  int duty_cycle_mapped = map(duty_cycle, 0, 1023, 0, 254);
+
+  // Apply the duty cycle to both PWM pins
+  analogWrite(pwm_pin1, duty_cycle_mapped);
+  analogWrite(pwm_pin2, duty_cycle_mapped);
+}
