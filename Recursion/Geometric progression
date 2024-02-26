@@ -26,5 +26,5 @@ void printAM(int d, int n, int c) {
     
     cout << c << " ";
     
-    printAM(d, n - 1, c * d);
+    printGM(d, n - 1, c * d);
 }
