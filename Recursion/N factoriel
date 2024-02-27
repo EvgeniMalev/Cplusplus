@@ -9,7 +9,6 @@ int main() {
     cout << "Please enter a number: ";
     cin >> num;
 
-    // Call the function to find factorial
     int factorial = NfactorialUsingRecursion(num);
 
     cout << "Factorial of " << num << " is: " << factorial << endl;
@@ -18,11 +17,11 @@ int main() {
 }
 
 int NfactorialUsingRecursion(int n) {
-    // Base case
+
     if (n == 0 || n == 1) {
         return 1;
     } else {
-        // Recursive call
+       
         return n * NfactorialUsingRecursion(n - 1);
     }
 }
