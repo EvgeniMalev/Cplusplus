@@ -1,3 +1,5 @@
+// Representing a geometric progression using recursion
+
 #include <iostream>
 using namespace std;
 
