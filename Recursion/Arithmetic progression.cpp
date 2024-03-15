@@ -1,3 +1,5 @@
+// Representing a arithmetic progression using recursion
+
 #include <iostream>
 using namespace std;
 
