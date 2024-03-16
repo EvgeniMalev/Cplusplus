@@ -1,3 +1,5 @@
+// Calculating N factorial using Recursion
+
 #include <iostream>
 using namespace std;
 
