@@ -4,7 +4,7 @@ int counter = 0;
 
 void setup() {
   for (int i = 0; i < 4; i++) {
-    pinMode(ledPins[i], OUTPUT);
+    pinMode(ledPins[i][j], OUTPUT);
   }
 }
 
