@@ -3,7 +3,7 @@ const int ledPins[4] = {2, 3, 4, 5};
 int counter = 0;
 
 void setup() {
-  for (int i = 0; i < 4; i++) {
+  for (int i = 0; i < 10; i++) {
     pinMode(ledPins[i][j], OUTPUT);
   }
 }
