@@ -22,7 +22,7 @@ int main() {
   firstbuilding.yearofconstruction = 1858;
   firstbuilding.floors = 4;
   firstbuilding.length = 25.6;
-  firstbuilding.width = 20.6;
+  firstbuilding.width = 21.6;
   firstbuilding.height  = 14.6; 
   
   Building secondbuilding;
