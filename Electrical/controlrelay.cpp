@@ -1,7 +1,7 @@
 const int startButtonPin = 2;
 const int stopButtonPin = 3;
 const int relayPin = 4;
-const unsigned long delayTime = 5000;
+const unsigned long delayTime = 2500;
 bool isRunning = false;
 
 void setup() {
