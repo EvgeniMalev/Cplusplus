@@ -16,7 +16,7 @@ int main() {
     cout << "Enter second letter: ";
     cin >> b;
     
-    cout << "The letter with the highest index in the alphabet is: " << getMax(a, b) << endl;
+    cout << "The letter with the highest index in the Alphabet is: " << getMax(a, b) << endl;
 
     return 0;
 }
